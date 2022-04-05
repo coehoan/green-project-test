@@ -1,0 +1,91 @@
+{{>/layout/header}}
+<!--메인검색버튼 시작-->
+<div class="d-flex justify-content-center">
+  <img src="/dog1.png">
+</div>
+
+<div class="m-padding-small d-flex flex-column">
+  <div class="container-fluid">
+    <form class="d-flex flex-fill">
+      <input class="form-control me-2" type="search" placeholder="검색" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+<!--메인검색버튼 종료-->
+<!--상세검색버튼 시작-->
+<div class="m-padding-medium d-flex flex-column">
+  <div class="container-fluid">
+    <form class="d-flex flex-fill">
+      <input class="form-control me-2" type="search" placeholder="날짜" aria-label="Search">
+      <input class="form-control me-2" type="search" placeholder="지역" aria-label="Search">
+      <input class="form-control me-2" type="search" placeholder="품종" aria-label="Search">
+      <input class="form-control me-2" type="search" placeholder="종류" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+<!--상세검색버튼 시작-->
+<!--검색결과테이블 시작-->
+<div class="m-padding-medium d-flex flex-column">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">사진</th>
+        <th scope="col">지역</th>
+        <th scope="col">품종</th>
+        <th scope="col">이름</th>
+        <th scope="col">나이</th>
+        <th scope="col">보호소이름</th>
+        <th scope="col">자세히보기</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <div class="d-flex m-text-align">
+          <th scope="row" style="vertical-align: middle;">1</th>
+          <td width="110"><img src="/dog1.png" width="100" height="100"></td>
+          <td style="vertical-align: middle;"class="m-text-align">부산</td>
+          <td style="vertical-align: middle;">강아지</td>
+          <td style="vertical-align: middle;">누렁이</td>
+          <td style="vertical-align: middle;">3살</td>
+          <td style="vertical-align: middle;">누렁이보호소</td>
+          <td style="vertical-align: middle;" width="100">
+            <a class="btn btn-outline-success" href="#" role="button">Link</a>
+          </td>
+        </div>
+      </tr>
+      <tr>
+        <th scope="row" style="vertical-align: middle;">2</th>
+        <td><img src="/dog1.png" width="100" height="100"></td>
+        <td style="vertical-align: middle;">부산</td>
+        <td style="vertical-align: middle;">강아지</td>
+        <td style="vertical-align: middle;">누렁이친구</td>
+        <td style="vertical-align: middle;">3살</td>
+        <td style="vertical-align: middle;">누렁이보호소</td>
+        <td style="vertical-align: middle;" width="100">
+          <button type="button" class="btn btn-outline-success">자세히</button>
+        </td>
+
+      </tr>
+      <tr>
+        <div class="d-flex m-text-align">
+          <th scope="row" style="vertical-align: middle;">3</th>
+          <td><img src="/dog1.png" width="100" height="100"></td>
+          <td style="vertical-align: middle;">김해</td>
+          <td style="vertical-align: middle;">강아지</td>
+          <td style="vertical-align: middle;">누렁이동생</td>
+          <td style="vertical-align: middle;">2살</td>
+          <td style="vertical-align: middle;">누렁이보호소</td>
+          <td style="vertical-align: middle;" width="100">
+            <button type="button" class="btn btn-outline-success">자세히</button>
+          </td>
+        </div>
+      </tr>
+    </tbody>
+</div>
+</table>
+</div>
+<!--검색결과테이블 끝-->
+{{>/layout/footer}}
